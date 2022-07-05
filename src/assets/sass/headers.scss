@@ -1,0 +1,103 @@
+.header {
+    background-color: $header-darkbg;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    color: $light-color;
+    font-size: $font-sizing;
+    
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $light-color;
+        text-decoration: none;
+        margin: 0 auto;
+        padding: 0;
+        margin-left: 10px;
+        cursor: pointer;
+
+        &--img{
+            background-image: url("../img/cambio-de-dinero_64px.png");
+            background-size: cover;
+            width: 48px;
+            height: 48px;
+        }
+
+        &--name{
+            line-height: 1;
+            font-weight: bold;
+            color: $light-color;
+            text-decoration: none;
+            margin: 0 auto;
+            padding: 0;
+            margin-left: .5rem;
+            width: 8rem;
+
+            span:first-child{
+                color: $green-color;
+            }
+
+            span:last-child {
+                color: $variation-color;
+            }
+        }
+
+    }
+
+    .nav-menu {
+        display: flex;
+        margin-right: 40px;
+
+        &__item {
+            font-size: 1.8rem;
+            margin: 0 1.8rem;
+            width: max-content;
+        }
+
+        &__link {
+            color: $light-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $green-color;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    &__toggle {
+        color: $light-color;
+        font-size: 2.7rem;
+        cursor: pointer;
+        padding: 15px;
+        display: none;
+    }
+
+
+    @media (max-width: 768px) {
+        &__nav {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-top: 10px;
+        }
+        &__toggle {
+            display: block;
+        }
+        .nav-menu {
+            display: none;
+        }
+    }
+}
