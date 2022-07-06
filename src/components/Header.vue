@@ -7,7 +7,7 @@
           A <span>cuánto</span> la <span>luka</span>
         </span>
       </a>
-      <ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
+      <ion-icon @click="toggleMenu" name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
       
       <ul class="nav-menu">
         <li class="nav-menu__item">
@@ -48,10 +48,15 @@ export default {
         name: "Noticias",
         href: "#newsletter",
       },
-    ];
+    ],
+    toggleMenu = () => {
+      let menu = document.querySelector(".nav-menu");
+      menu.classList.toggle("active");
+    }
 
     return {
       links,
+      toggleMenu,
     };
   },
 };
