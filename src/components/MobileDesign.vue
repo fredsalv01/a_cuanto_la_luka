@@ -8,20 +8,22 @@
                 (El precio se actualiza cada minuto)
             </span>
         </div>
-        <div class="mobile__table-companies">
-            <a href="#" class="buys active">Compra</a>
-            <a href="#" class="sells">Venta</a>
-        </div>
-        <div class="currency">
-            <img src="../assets/img/companies/inkamoney.png" alt="inkamoney">
-            <div class="currency__data">
-                <span class="currency__buy">
-                    S/ 3.7180
-                </span>
-                <span class="currrency__sell">
-                    S/ 3.7330
-                </span>
-                <a target="_blank" class="currency__btn" href="https://www.inkamoney.com/">Ir a</a>
+        <div class="mobile__table">
+            <div class="mobile__table-companies">
+                <a href="#" class="currency_active">Compra</a>
+                <a href="#" >Venta</a>
+            </div>
+            <div class="currency">
+                <img src="../assets/img/companies/inkamoney.png" alt="inkamoney">
+                <div class="currency__data">
+                    <span class="currency__buy">
+                    C: S/ 3.7180
+                    </span>
+                    <span class="currrency__sell">
+                    V: S/ 3.7330
+                    </span>
+                    <a target="_blank" class="currency__btn" href="https://www.inkamoney.com/">Ir a</a>
+                </div>
             </div>
         </div>
     </div>
