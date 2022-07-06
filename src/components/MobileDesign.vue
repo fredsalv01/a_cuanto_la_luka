@@ -5,7 +5,7 @@
                 Datos actualizados a las {{ lastUpdate }}
             </p>
             <span>
-                (El precio se actualiza cada minuto)
+                (El precio se actualiza cada 5 minutos)
             </span>
         </div>
         <div class="mobile__table">
@@ -84,7 +84,7 @@ export default {
         const update = () => {
             lastUpdate.value = (new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds())
         }
-        setInterval(update, 60000)
+        setInterval(update, 300000)
         update()
         return {
             lastUpdate
