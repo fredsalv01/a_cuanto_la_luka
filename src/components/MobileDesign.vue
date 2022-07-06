@@ -46,7 +46,7 @@
                     <span class="currency__sell">
                     V: S/ 3.9020
                     </span>
-                    <a target="_blank" class="currency__btn" href="https://www.inkamoney.com/">Ir a</a>
+                    <a target="_blank" class="currency__btn" href="https://www.cambi.pe/">Ir a</a>
                 </div>
             </div>
             <div class="currency">
@@ -58,7 +58,7 @@
                     <span class="currency__sell">
                     V: S/ 3.9000
                     </span>
-                    <a target="_blank" class="currency__btn" href="https://www.dollarhouse.com/">Ir a</a>
+                    <a target="_blank" class="currency__btn" href="https://dollarhouse.pe/">Ir a</a>
                 </div>
             </div>
             <div class="currency">
@@ -70,7 +70,7 @@
                     <span class="currency__sell">
                     V: S/ 3.8950
                     </span>
-                    <a target="_blank" class="currency__btn" href="https://www.roblex.com/">Ir a</a>
+                    <a target="_blank" class="currency__btn" href="https://roblex.pe/#/">Ir a</a>
                 </div>
             </div>
         </div>
