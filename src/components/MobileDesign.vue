@@ -26,27 +26,51 @@
                 </div>
             </div>
             <div class="currency">
-                <img src="../assets/img/companies/inkamoney.png" alt="inkamoney">
+                <img src="../assets/img/companies/rextie.png" alt="rextie">
                 <div class="currency__data">
                     <span class="currency__buy">
-                    C: S/ 3.7180
+                    C: S/ 3.8760
                     </span>
                     <span class="currency__sell">
-                    V: S/ 3.7330
+                    V: S/ 3.9070
+                    </span>
+                    <a target="_blank" class="currency__btn" href="https://www.rextie.com/">Ir a</a>
+                </div>
+            </div>
+            <div class="currency">
+                <img src="../assets/img/companies/cambi.png" alt="cambi">
+                <div class="currency__data">
+                    <span class="currency__buy">
+                    C: S/ 3.8780
+                    </span>
+                    <span class="currency__sell">
+                    V: S/ 3.9020
                     </span>
                     <a target="_blank" class="currency__btn" href="https://www.inkamoney.com/">Ir a</a>
                 </div>
             </div>
             <div class="currency">
-                <img src="../assets/img/companies/inkamoney.png" alt="inkamoney">
+                <img src="../assets/img/companies/dollarhouse.png" alt="dollarhouse">
                 <div class="currency__data">
                     <span class="currency__buy">
-                    C: S/ 3.7180
+                    C: S/ 3.8750
                     </span>
                     <span class="currency__sell">
-                    V: S/ 3.7330
+                    V: S/ 3.9000
                     </span>
-                    <a target="_blank" class="currency__btn" href="https://www.inkamoney.com/">Ir a</a>
+                    <a target="_blank" class="currency__btn" href="https://www.dollarhouse.com/">Ir a</a>
+                </div>
+            </div>
+            <div class="currency">
+                <img src="../assets/img/companies/roblex.png" alt="roblex">
+                <div class="currency__data">
+                    <span class="currency__buy">
+                    C: S/ 3.8750
+                    </span>
+                    <span class="currency__sell">
+                    V: S/ 3.8950
+                    </span>
+                    <a target="_blank" class="currency__btn" href="https://www.roblex.com/">Ir a</a>
                 </div>
             </div>
         </div>
