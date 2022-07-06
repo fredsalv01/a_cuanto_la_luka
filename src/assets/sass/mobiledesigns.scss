@@ -1,0 +1,28 @@
+.mobile__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+    min-width: 320px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+
+    .mobile__info-banner {
+        background-color: rgba($green-color, 0.7);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        span {
+            padding-top: 1.5rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    .mobile__table-companies {
+        margin-top: 40px;
+    }
+
+}
