@@ -19,7 +19,31 @@
                     <span class="currency__buy">
                     C: S/ 3.7180
                     </span>
-                    <span class="currrency__sell">
+                    <span class="currency__sell">
+                    V: S/ 3.7330
+                    </span>
+                    <a target="_blank" class="currency__btn" href="https://www.inkamoney.com/">Ir a</a>
+                </div>
+            </div>
+            <div class="currency">
+                <img src="../assets/img/companies/inkamoney.png" alt="inkamoney">
+                <div class="currency__data">
+                    <span class="currency__buy">
+                    C: S/ 3.7180
+                    </span>
+                    <span class="currency__sell">
+                    V: S/ 3.7330
+                    </span>
+                    <a target="_blank" class="currency__btn" href="https://www.inkamoney.com/">Ir a</a>
+                </div>
+            </div>
+            <div class="currency">
+                <img src="../assets/img/companies/inkamoney.png" alt="inkamoney">
+                <div class="currency__data">
+                    <span class="currency__buy">
+                    C: S/ 3.7180
+                    </span>
+                    <span class="currency__sell">
                     V: S/ 3.7330
                     </span>
                     <a target="_blank" class="currency__btn" href="https://www.inkamoney.com/">Ir a</a>
