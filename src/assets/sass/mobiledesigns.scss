@@ -23,6 +23,8 @@
     .mobile__table {
         margin: 0 auto;
         width: 90%;
+        max-width: 680px;
+        min-width: 280px;
         font-size: 1.5rem;
 
         &-companies {
@@ -73,6 +75,12 @@
             }
 
             &__data{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
                 .currency__buy{
                     color: $green-color;
                 }
@@ -83,10 +91,13 @@
 
                 span {
                     padding: .5rem;
-                    display: block;
                     
                 }
-    
+                
+                @media (max-width: 470px){
+                    flex-direction: column;
+                }
+
             }            
             
             &__btn{
