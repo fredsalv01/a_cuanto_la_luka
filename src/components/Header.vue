@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <nav class="header__nav">
-      <a href="/" class="header__logo">
+      <a href="/a_cuanto_la_luka/" class="header__logo">
         <span class="header__logo--img"></span>
         <span class="header__logo--name">
           A <span>cuánto</span> la <span>luka</span>
