@@ -29,6 +29,4 @@ This version requires have previously installed the Nodejs >= 16.0+ so I will ad
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 Also if you want to see a preview of the project visit the next url:
-```
-  https://fredsalv01.github.io/a_cuanto_la_luka/
-```
+- https://fredsalv01.github.io/a_cuanto_la_luka/
