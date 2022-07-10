@@ -9,7 +9,7 @@
             </span>
         </div>
         <div class="mobile__search">
-            <input type="text" placeholder="Buscar..." v-model="search">
+            <input class="mobile__search-input" type="text" placeholder="Buscar..." v-model="search">
         </div>
         <div class="mobile__table">
             <div class="mobile__table-companies">
@@ -51,7 +51,8 @@ export default {
 
         return {
             lastUpdate,
-            companies
+            companies,
+            search
         }
     }
 }

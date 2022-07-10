@@ -12,11 +12,32 @@
         text-align: center;
         font-size: 1.6rem;
         font-weight: bold;
+        font-family: $base-font;
         margin-bottom: 20px;
 
         span {
             padding-top: 1.5rem;
             font-size: 1.2rem;
+        }
+    }
+
+    .mobile__search{
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 90%;
+        max-width: 680px;
+        min-width: 280px;
+
+        &-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.8rem;
+            font-family: $second-font;
+            color: #333;
+            background-color: #fff;
+            transition: all 0.3s ease-in-out;
         }
     }
 
