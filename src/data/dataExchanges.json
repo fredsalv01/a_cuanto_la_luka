@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Inkamoney",
+        "url": "https://www.inkamoney.com/" ,
+        "logo": "inkamoney.png",
+        "buy":"3.7180",
+        "sell":"3.7330"
+    },
+    {
+        "name": "Rextie",
+        "url": "https://www.rextie.com/" ,
+        "logo":"rextie.png",
+        "buy":"3.8760",
+        "sell":"3.9070"
+    },
+    {
+        "name": "Cambi",
+        "url": "https://www.cambi.pe/" ,
+        "logo":"cambi.png",
+        "buy":"3.8780",
+        "sell":"3.9020"
+    },
+    {
+        "name": "Dollar House",
+        "url": "https://dollarhouse.pe/" ,
+        "logo":"dollarhouse.png",
+        "buy":" 3.8750",
+        "sell":"3.9000"
+    },
+    {
+        "name": "Roblex",
+        "url": "https://roblex.pe/#/" ,
+        "logo":"roblex.png",
+        "buy":"3.8750",
+        "sell":"3.8950"
+    }
+]

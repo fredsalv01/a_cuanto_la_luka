@@ -8,76 +8,35 @@
                 (El precio se actualiza cada 5 minutos)
             </span>
         </div>
+        <div class="mobile__search">
+            <input type="text" placeholder="Buscar..." v-model="search">
+        </div>
         <div class="mobile__table">
             <div class="mobile__table-companies">
-                <a href="#" class="currency_active">Compra</a>
-                <a href="#" >Venta</a>
+                <a href="#" class="currency_option currency_active">Compra</a>
+                <a href="#" class="currency_option">Venta</a>
             </div>
-            <div class="currency">
-                <img src="../assets/img/companies/inkamoney.png" alt="inkamoney">
+            
+            <div class="currency" v-for="company in companies" :key="company.name">
+                <img v-bind:src="'src/assets/img/companies/' + company.logo" :alt="company.name">
                 <div class="currency__data">
                     <span class="currency__buy">
-                    C: S/ 3.7180
+                    C: S/ {{company.buy}}
                     </span>
                     <span class="currency__sell">
-                    V: S/ 3.7330
+                    V: S/ {{company.sell}}
                     </span>
-                    <a target="_blank" class="currency__btn" href="https://www.inkamoney.com/">Ir a</a>
+                    <a target="_blank" class="currency__btn" :href="company.url">Ir a</a>
                 </div>
             </div>
-            <div class="currency">
-                <img src="../assets/img/companies/rextie.png" alt="rextie">
-                <div class="currency__data">
-                    <span class="currency__buy">
-                    C: S/ 3.8760
-                    </span>
-                    <span class="currency__sell">
-                    V: S/ 3.9070
-                    </span>
-                    <a target="_blank" class="currency__btn" href="https://www.rextie.com/">Ir a</a>
-                </div>
-            </div>
-            <div class="currency">
-                <img src="../assets/img/companies/cambi.png" alt="cambi">
-                <div class="currency__data">
-                    <span class="currency__buy">
-                    C: S/ 3.8780
-                    </span>
-                    <span class="currency__sell">
-                    V: S/ 3.9020
-                    </span>
-                    <a target="_blank" class="currency__btn" href="https://www.cambi.pe/">Ir a</a>
-                </div>
-            </div>
-            <div class="currency">
-                <img src="../assets/img/companies/dollarhouse.png" alt="dollarhouse">
-                <div class="currency__data">
-                    <span class="currency__buy">
-                    C: S/ 3.8750
-                    </span>
-                    <span class="currency__sell">
-                    V: S/ 3.9000
-                    </span>
-                    <a target="_blank" class="currency__btn" href="https://dollarhouse.pe/">Ir a</a>
-                </div>
-            </div>
-            <div class="currency">
-                <img src="../assets/img/companies/roblex.png" alt="roblex">
-                <div class="currency__data">
-                    <span class="currency__buy">
-                    C: S/ 3.8750
-                    </span>
-                    <span class="currency__sell">
-                    V: S/ 3.8950
-                    </span>
-                    <a target="_blank" class="currency__btn" href="https://roblex.pe/#/">Ir a</a>
-                </div>
-            </div>
+            
         </div>
     </div>
 </template>
 <script>
 import { ref } from 'vue'
+import data from '../data/dataExchanges.json'
+
 export default {
     setup() {
         const lastUpdate = ref(new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds())
@@ -86,8 +45,13 @@ export default {
         }
         setInterval(update, 300000)
         update()
+
+        const companies = ref(data)
+        const search = ref("");
+
         return {
-            lastUpdate
+            lastUpdate,
+            companies
         }
     }
 }
