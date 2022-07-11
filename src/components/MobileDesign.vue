@@ -17,7 +17,7 @@
                 <a href="#" class="currency_option">Venta</a>
             </div>
             
-            <div class="currency" v-for="company in companies" :key="company.name">
+            <div class="currency" v-for="company in filteredCompanies" :key="company.name">
                 <img :src="`./companies/${company.logo}`" :alt="company.name">
                 <div class="currency__data">
                     <span class="currency__buy">
@@ -34,7 +34,7 @@
     </div>
 </template>
 <script>
-import { ref } from 'vue'
+import { computed, reactive, ref } from 'vue'
 import data from '../data/dataExchanges.json'
 
 export default {
@@ -46,13 +46,19 @@ export default {
         setInterval(update, 300000)
         update()
 
-        const companies = ref(data)
+        const companies = reactive(data)
         const search = ref("");
+        const filteredCompanies = computed(() => {
+            return companies.filter(company => {
+                return company.name.toLowerCase().includes(search.value.toLowerCase())
+            })
+        })
 
         return {
             lastUpdate,
             companies,
-            search
+            search,
+            filteredCompanies
         }
     }
 }
