@@ -18,7 +18,7 @@
             </div>
             
             <div class="currency" v-for="company in companies" :key="company.name">
-                <img :src="`/companies/${company.logo}`" :alt="company.name">
+                <img :src="`./companies/${company.logo}`" :alt="company.name">
                 <div class="currency__data">
                     <span class="currency__buy">
                     C: S/ {{company.buy}}
