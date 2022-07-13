@@ -77,6 +77,13 @@
                 color: $variation-color;
             }
         }
+        
+        .list-move,
+        .list-enter-active,
+        .list-leave-active {
+            transition: all 0.8s ease-in-out;
+        }
+        
         .currency {
             display: flex;
             justify-content: space-between;
@@ -141,6 +148,9 @@
                 }
             }
         }
+
+
+
 
     }
 

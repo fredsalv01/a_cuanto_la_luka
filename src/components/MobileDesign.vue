@@ -20,23 +20,24 @@
                     <input type="radio" :value="false" v-model="currency_type">
                 </label>
             </div>
-            <div class="currency" v-if="filteredCompanies.length > 0" v-for="company in filteredCompanies" :key="company.name">
-                <img :src="`./companies/${company.logo}`" :alt="company.name">
-                <div class="currency__data">
-                    <span class="currency__buy">
-                    C: S/ {{(company.buy).toFixed(4)}}
-                    </span>
-                    <span class="currency__sell">
-                    V: S/ {{(company.sell).toFixed(4)}}
-                    </span>
-                    <a target="_blank" class="currency__btn" :href="company.url">Ir a</a>
+            <transition-group name="list" tag="ul">
+                <li class="currency" v-if="filteredCompanies.length > 0" v-for="company in filteredCompanies" :key="company.name">
+                    <img :src="`./companies/${company.logo}`" :alt="company.name">
+                    <div class="currency__data">
+                        <span class="currency__buy">
+                        C: S/ {{(company.buy).toFixed(4)}}
+                        </span>
+                        <span class="currency__sell">
+                        V: S/ {{(company.sell).toFixed(4)}}
+                        </span>
+                        <a target="_blank" class="currency__btn" :href="company.url">Ir a</a>
+                    </div>
+                </li>
+    
+                <div class="currency" v-if="filteredCompanies.length == 0">
+                    <p>No hay resultados</p>
                 </div>
-            </div>
-
-            <div class="currency" v-if="filteredCompanies.length == 0">
-                <p>No hay resultados</p>
-            </div>
-            
+            </transition-group>
         </div>
     </div>
 </template>
