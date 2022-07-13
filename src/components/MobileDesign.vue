@@ -13,11 +13,11 @@
         </div>
         <div class="mobile__table">
             <div class="mobile__table-companies">
-                <label :class="btn_buy">Compra
-                    <input type="checkbox" v-model="currency__buy">
+                <label :class="currency_type ? 'btn_buy currency_active' : 'btn_buy'">Compra
+                    <input type="radio" :value="true" v-model="currency_type" >
                 </label>
-                <label :class="btn_sell">Venta
-                    <input type="checkbox" v-model="currency__sell">
+                <label :class="!currency_type ? 'btn_sell currency_active' : 'btn_sell'" >Venta
+                    <input type="radio" :value="false" v-model="currency_type">
                 </label>
             </div>
             <div class="currency" v-if="filteredCompanies.length > 0" v-for="company in filteredCompanies" :key="company.name">
@@ -55,11 +55,7 @@ export default {
 
         const companies = reactive(data)
         const search = ref("");
-
-        const currency__sell = ref(false);
-        const currency__buy = ref(false);
-        const btn_sell = reactive(["btn_sell"]);
-        const btn_buy = reactive(["btn_buy"]);
+        const currency_type = ref(true);
 
         const filteredCompanies = computed(() => {
             if(search.value){
@@ -67,39 +63,29 @@ export default {
                     return company.name.toLowerCase().includes(search.value.toLowerCase())
                 })
             }
-            if(currency__sell.value){
-                const buy = document.getElementsByClassName("btn_buy");
-                buy.cheked = false;
-                // currency__buy.value = false;
-                return companies.sort((a, b) => {
+            if(currency_type.value){
+                return [...companies].sort((a, b) => {
+                    return b.buy < a.buy ? 1 : -1
+                })
+            }
+
+            if(!currency_type.value){
+                return [...companies].sort((a, b) => {
                     return b.sell > a.sell ? 1 : -1
                 })
             }
-            if(currency__buy.value){
-                const sell = document.getElementsByClassName("btn_sell");
-                sell.cheked = false;
-                // currency__sell.value = false;
-                return companies.sort((a, b) => {
-                    return b.buy < a.buy ? 1 : -1
-            })
-            }else{
+
+            else{
                 return companies
             }
         })
-
-        
-
-        
 
         return {
             lastUpdate,
             companies,
             search,
             filteredCompanies,
-            currency__buy,
-            currency__sell,
-            btn_buy,
-            btn_sell,
+            currency_type
         }
     }
 }
