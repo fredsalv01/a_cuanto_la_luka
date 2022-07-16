@@ -1,6 +1,7 @@
 <script setup>
-  import Header from './components/Header.vue';
+import Header from './components/Header.vue';
 import MobileDesign from './components/MobileDesign.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -8,4 +9,5 @@ import MobileDesign from './components/MobileDesign.vue';
   <main>
     <MobileDesign></MobileDesign>
   </main>
+  <Footer />
 </template>
