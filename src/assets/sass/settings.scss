@@ -9,6 +9,7 @@
 html{
     font-size: 62.5%;
     width: 100%;
+    height: 100%;
 }
 
 body{
@@ -16,6 +17,7 @@ body{
     font-size: $font-sizing;
     line-height: $line-height;
     background-color: $light-color;
+    height: 100%;
 }
 
 a {

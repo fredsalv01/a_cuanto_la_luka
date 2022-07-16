@@ -3,7 +3,9 @@
         <div class="footer__wrapper">
             <div class="branding">
             <div class="logo">
-                <img src="/Iconremovebg.png" alt="A cuanto la Luka">
+                <a href="/a_cuanto_la_luka/">
+                    <img src="/Iconremovebg.png" alt="A cuanto la Luka">
+                </a>
             </div>
             <div class="text">
                 A cuanto la luka es un comparador del tipo de cambio de algunas

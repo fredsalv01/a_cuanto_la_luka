@@ -2,8 +2,8 @@
     background-color: $header-darkbg;
     color: $light-color;
     width: 100%;
-    height: auto;
-    padding: 1rem 1rem 0 1rem;
+    min-width: 320px;
+    padding: 3rem 1rem 0 1rem;
     margin-bottom: 0;
     font-family: $second-font;
 
@@ -17,6 +17,7 @@
 
     .branding{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         padding-top: 2em;
         font-weight: bold;
@@ -26,12 +27,10 @@
         box-shadow: 0 8px 0 5px rgba(#22272f, 0.5);
         width: 100%;
         max-width: 400px;
-        min-width: 320px;
+        min-width: 280px;
         
         .text{
-            border-left: 2px solid $light-color;
-            padding-left: 1rem;
-            margin-left: 0.5rem;
+            padding: 0 10px;
             text-align: justify;
         }
     }
@@ -71,9 +70,14 @@
             flex-direction: column;
         }
 
-        .headings{
-            padding-top: 1rem;
+        .branding{
+            flex-direction: column;
         }
+
+        .headings{
+            padding-top: 3rem;
+        }
+        
 
         .links > li {
             padding-top: 1.8rem;
