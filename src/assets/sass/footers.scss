@@ -1,0 +1,83 @@
+.footer{
+    width: 100%;
+    min-width: 320px;
+    background-color: $header-darkbg;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    padding-bottom: 1rem;
+    color: $light-color;
+    font-family: $second-font;
+
+    &__content{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__company-description{
+        display: flex;
+        text-align: justify;
+        background-color: rgba(rgba(46, 50, 58, 0.526), 0.85);
+        padding: .5rem 0;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+        width: 100%;
+        max-width: 30rem;
+
+        img{
+            width: 100px;
+            height: 64px;
+            object-fit: contain;
+        }
+
+        .text{
+            font-size: 1.5rem;
+            margin-left: .5rem;
+            margin-bottom: 1rem;
+            width: 180px;
+        }
+    }
+
+    &__titles{
+        margin-top: 1rem;
+        line-height: 1.5;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__copyright{
+        margin-top: 1rem;
+        line-height: 1.5;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    a{
+        color: $light-color;
+        &:hover{
+            transition: all .3s ease-in-out;
+            color: $green-color;
+        }
+    }
+
+    li{
+        display: inline-block;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.5;
+
+    }
+
+    @media (max-width: 768px){
+        &__content{
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+}

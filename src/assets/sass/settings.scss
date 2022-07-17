@@ -18,6 +18,7 @@ body{
     line-height: $line-height;
     background-color: $light-color;
     height: 100%;
+    width: 100%;
 }
 
 a {
@@ -44,7 +45,6 @@ button {
 
 main {
     padding-top: 80px;
-    font-size: calc($font-sizing);
+    font-size: $font-sizing;
     padding-bottom: 50px;
 }
-
