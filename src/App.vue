@@ -9,5 +9,4 @@ import Footer from './components/Footer.vue';
   <main>
     <MobileDesign></MobileDesign>
   </main>
-  <Footer />
 </template>
